@@ -1,26 +1,90 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-base:    #080808;
+  --color-surface: #111111;
+  --color-border:  #1e1e1e;
+  --color-muted:   #555555;
+  --color-fg:      #f0f0f0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --accent:     #E8FF4D;
+  --accent-rgb: 232, 255, 77;
+}
+
+@media (pointer: fine) {
+  *, *::before, *::after { cursor: none !important; }
+}
+
+html {
+  background-color: #080808;
+  color: #f0f0f0;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #080808;
+  color: #f0f0f0;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--accent);
+  color: #080808;
+}
+
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+.anim-fade-up {
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.anim-fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes flicker {
+  0%   { opacity: 1; }
+  3%   { opacity: 0; }
+  5%   { opacity: 1; }
+  7%   { opacity: 0.2; }
+  9%   { opacity: 1; }
+  30%  { opacity: 1; }
+  31%  { opacity: 0; }
+  33%  { opacity: 0.6; }
+  34%  { opacity: 0; }
+  36%  { opacity: 1; }
+  60%  { opacity: 1; }
+  62%  { opacity: 0.1; }
+  63%  { opacity: 1; }
+  65%  { opacity: 0; }
+  66%  { opacity: 0.8; }
+  67%  { opacity: 0; }
+  69%  { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+.name-flicker {
+  animation: flicker 2s infinite;
+  color: var(--accent);
+  text-shadow: 0 0 8px var(--accent), 0 0 22px var(--accent);
 }
