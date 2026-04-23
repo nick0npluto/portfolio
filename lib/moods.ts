@@ -63,6 +63,7 @@ export const PROJECT_CARDS: ProjectCard[] = [
     size:    'large',
     year:    '2025',
     summary: 'Full-stack booking app for service businesses. Stripe payments, Google Sheets financial tracking, and webhook-driven invoice generation — cut manual back-office work by 95%.',
+    href:    'https://impearl.netlify.app',
     image:   '/impearl-screenshot.png',
   },
   {
