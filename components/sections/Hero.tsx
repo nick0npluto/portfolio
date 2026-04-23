@@ -37,7 +37,7 @@ export function Hero() {
             {config.sub}
           </p>
 
-          <div className="anim-fade-up" style={{ animationDelay: '0.25s' }}>
+          <div className="flex flex-wrap items-center gap-4 anim-fade-up" style={{ animationDelay: '0.25s' }}>
             <a
               href="#contact"
               className="group inline-flex items-center gap-3 px-8 py-4 border font-mono text-sm tracking-widest uppercase transition-all duration-300"
@@ -55,6 +55,18 @@ export function Hero() {
             >
               {config.ctaLabel}
               <span className="transition-transform duration-200 group-hover:translate-x-1">→</span>
+            </a>
+
+            <a
+              href="/nicholas-onafuye-resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2 px-6 py-4 font-mono text-sm tracking-widest uppercase text-muted border border-border transition-all duration-300 hover:text-fg hover:border-fg"
+            >
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="transition-transform duration-200 group-hover:-translate-y-0.5">
+                <path d="M2 10v2h10v-2M7 1v8M4 6l3 3 3-3" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              Résumé
             </a>
           </div>
         </div>
