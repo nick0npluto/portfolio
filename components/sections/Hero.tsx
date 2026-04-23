@@ -75,11 +75,25 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 anim-fade-in" style={{ animationDelay: '0.5s' }}>
-        <span className="font-mono text-[9px] tracking-[0.3em] text-muted uppercase">scroll</span>
-        <div className="w-px h-8 bg-border" />
-      </div>
+      {/* Scroll to projects cue */}
+      <a
+        href="#projects"
+        aria-label="Scroll to projects"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 anim-fade-in group"
+        style={{ animationDelay: '0.6s' }}
+      >
+        <span className="font-mono text-[9px] tracking-[0.3em] uppercase transition-colors duration-200 text-muted group-hover:text-fg">
+          see the work
+        </span>
+        <div className="anim-bounce-down flex flex-col items-center gap-0.5">
+          <svg width="18" height="10" viewBox="0 0 18 10" fill="none" style={{ color: 'var(--accent)' }}>
+            <path d="M1 1l8 8 8-8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+          <svg width="18" height="10" viewBox="0 0 18 10" fill="none" style={{ color: 'var(--accent)', opacity: 0.35 }}>
+            <path d="M1 1l8 8 8-8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </div>
+      </a>
     </section>
   )
 }

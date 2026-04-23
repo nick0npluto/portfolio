@@ -5,7 +5,7 @@ import { PROJECT_CARDS } from '@/lib/moods'
 
 export function Projects() {
   return (
-    <section className="px-6 md:px-10 py-24 max-w-7xl mx-auto w-full">
+    <section id="projects" className="px-6 md:px-10 py-24 max-w-7xl mx-auto w-full">
       {/* Section header */}
       <div className="flex items-center gap-6 mb-12">
         <div className="flex flex-col gap-1">
