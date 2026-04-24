@@ -24,6 +24,18 @@ export function Hero() {
       <div className="w-full max-w-7xl mx-auto md:pl-16 grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 lg:gap-20 items-center">
         {/* Left: text */}
         <div className="flex flex-col gap-8 max-w-3xl">
+          {/* Mobile headshot */}
+          <div className="block lg:hidden relative w-28 aspect-[3/4] border border-border overflow-hidden anim-fade-up self-start">
+            <Image
+              src="/headshot.png"
+              alt="Nicholas Onafuye"
+              fill
+              style={{ objectFit: 'cover', objectPosition: 'center top' }}
+              priority
+            />
+            <div className="absolute bottom-0 left-0 right-0 h-0.5" style={{ backgroundColor: 'var(--accent)' }} />
+          </div>
+
           <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-black leading-[0.92] tracking-tight text-fg anim-fade-up">
             {config.headline.split('\n').map((line, i) => (
               <span key={i} className="block">{line}</span>
