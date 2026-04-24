@@ -97,3 +97,20 @@ body {
   color: var(--accent);
   text-shadow: 0 0 8px var(--accent), 0 0 22px var(--accent);
 }
+
+@property --spin-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes spin-border {
+  to { --spin-angle: 360deg; }
+}
+
+.mood-btn-wrap {
+  padding: 1.5px;
+  border-radius: 0.6rem;
+  background: conic-gradient(from var(--spin-angle), transparent 72%, var(--accent) 86%, transparent 100%);
+  animation: spin-border 2.4s linear infinite;
+}

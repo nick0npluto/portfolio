@@ -115,19 +115,20 @@ export function MoodSelector() {
 
         <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
           {MOOD_OPTIONS.map((opt) => (
-            <button
-              key={opt.id}
-              onClick={() => handleSelect(opt.id)}
-              className="group flex flex-col items-start gap-1 px-8 py-5 border border-border rounded-lg text-left transition-colors duration-200 hover:border-[var(--accent)] focus-visible:outline-none"
-              style={{ backgroundColor: 'rgba(8,8,8,0.85)', backdropFilter: 'blur(8px)' }}
-            >
-              <span className="text-lg font-semibold text-fg tracking-tight transition-colors duration-200 group-hover:text-[var(--accent)]">
-                {opt.label}
-              </span>
-              <span className="text-sm font-mono text-muted transition-colors duration-200 group-hover:text-fg">
-                {opt.description}
-              </span>
-            </button>
+            <div key={opt.id} className="mood-btn-wrap flex-1">
+              <button
+                onClick={() => handleSelect(opt.id)}
+                className="group flex flex-col items-start gap-1 px-8 py-5 rounded-[0.5rem] text-left w-full focus-visible:outline-none"
+                style={{ backgroundColor: 'rgba(8,8,8,0.92)', backdropFilter: 'blur(8px)' }}
+              >
+                <span className="text-lg font-semibold text-fg tracking-tight transition-colors duration-200 group-hover:text-[var(--accent)]">
+                  {opt.label}
+                </span>
+                <span className="text-sm font-mono text-muted transition-colors duration-200 group-hover:text-fg">
+                  {opt.description}
+                </span>
+              </button>
+            </div>
           ))}
         </div>
       </div>
