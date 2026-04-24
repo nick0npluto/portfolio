@@ -17,7 +17,7 @@ export const MOODS: Record<Mood, MoodConfig> = {
     accent:    '#E8FF4D',
     accentRgb: '232, 255, 77',
     headline:  'Full-stack. Data-ready.\nAlready in production.',
-    sub:       'Python · TypeScript · React · AWS · Data Engineering — one engineer who covers the whole stack and can talk to anyone in the room.',
+    sub:       'Full-stack developer who ships fast, communicates clearly, and can work across any part of the product.',
     ctaLabel:  'Get in touch',
     emphasis:  'skills',
     bio:       'CS grad from Georgia State (3.5 GPA, Dec 2025) with real production experience: built AWS data pipelines at Carter\'s, automated payroll systems saving 90% processing time, and shipped a full-stack booking platform from scratch. I also have a background in tech sales — I communicate clearly, I work well with non-technical stakeholders, and people genuinely enjoy working with me. I write clean code, move fast, and care about the outcome.',
