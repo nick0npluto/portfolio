@@ -93,6 +93,7 @@ export const PROJECT_CARDS: ProjectCard[] = [
     size:    'small',
     year:    '2025',
     summary: 'Automated operations for a multi-site parking operator: 500+ weekly transactions processed, payroll time cut by 90%, and ETL pipelines feeding live Matplotlib dashboards.',
+    image:   '/statistics.png',
   },
 ]
 
