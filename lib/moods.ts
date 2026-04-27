@@ -57,24 +57,24 @@ export interface ProjectCard {
 
 export const PROJECT_CARDS: ProjectCard[] = [
   {
+    id:      'spayroll',
+    title:   'Spayroll+',
+    tags:    ['Python', 'TypeScript', 'Pandas', 'Matplotlib'],
+    size:    'large',
+    year:    '2025',
+    summary: 'Turned a 3-hour manual payroll process into a 10-minute run. Raw shift records go in — wage calculations, PDF reports, and labor-cost dashboards come out. Built to replace the spreadsheet entirely.',
+    href:    'https://spayroll.netlify.app',
+    image:   '/spaydark.png',
+  },
+  {
     id:      'impearl',
     title:   'Impearl',
     tags:    ['React', 'Node.js', 'MongoDB', 'Stripe', 'n8n', 'Zapier'],
-    size:    'large',
+    size:    'medium',
     year:    '2025',
     summary: 'Full-stack booking app for service businesses. Stripe payments, Google Sheets financial tracking, and webhook-driven invoice generation — cut manual back-office work by 95%.',
     href:    'https://impearl.netlify.app',
     image:   '/impearl-screenshot.png',
-  },
-  {
-    id:      'spayroll',
-    title:   'Spayroll+',
-    tags:    ['Python', 'TypeScript', 'Pandas', 'Matplotlib'],
-    size:    'medium',
-    year:    '2025',
-    summary: 'Payroll management tool that turns raw shift records into wage calculations, PDF reports, and labor-cost dashboards. Built to replace the spreadsheet.',
-    href:    'https://spayroll.netlify.app',
-    image:   '/spayroll-screenshot.png',
   },
   {
     id:      'north-pole',
