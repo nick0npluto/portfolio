@@ -12,8 +12,8 @@
 }
 
 :root {
-  --accent:     #E8FF4D;
-  --accent-rgb: 232, 255, 77;
+  --accent:     #FF8C42;
+  --accent-rgb: 255, 140, 66;
 }
 
 @media (pointer: fine) {
