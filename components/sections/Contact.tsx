@@ -96,7 +96,6 @@ function CollaborateContact() {
 }
 
 const LINKS = [
-  { label: 'GitHub',   href: 'https://github.com',                    desc: 'Code, projects, and repos' },
   { label: 'LinkedIn', href: 'https://linkedin.com',                   desc: 'Professional background' },
   { label: 'Email',    href: 'mailto:nicholasonafuye@gmail.com',        desc: 'nicholasonafuye@gmail.com' },
   { label: 'Resume',   href: '/nicholas-onafuye-resume.pdf',            desc: 'Download PDF' },
