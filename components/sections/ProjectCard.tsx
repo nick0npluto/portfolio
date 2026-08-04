@@ -14,16 +14,10 @@ interface ProjectCardProps extends ProjectCardType {
   index: number
 }
 
-export function ProjectCard({ title, tags, size, year, summary, href, image }: ProjectCardProps) {
-  const Wrapper = href ? 'a' : 'div'
-  const wrapperProps = href
-    ? { href, target: '_blank', rel: 'noopener noreferrer' }
-    : {}
-
+export function ProjectCard({ title, tags, size, year, summary, description, image }: ProjectCardProps) {
   return (
-    <Wrapper
-      {...wrapperProps}
-      className="break-inside-avoid mb-4 bg-surface border border-border rounded-lg overflow-hidden hover:border-[var(--accent)] transition-colors duration-200 block"
+    <div
+      className="group break-inside-avoid mb-4 bg-surface border border-border rounded-lg overflow-hidden hover:border-[var(--accent)] transition-colors duration-200 block"
     >
       {/* Preview area */}
       <div
@@ -48,6 +42,13 @@ export function ProjectCard({ title, tags, size, year, summary, href, image }: P
         <span className="absolute top-3 right-3 font-mono text-[9px] tracking-widest text-muted uppercase bg-base/70 px-1.5 py-0.5 rounded">
           {year}
         </span>
+
+        {/* Hover overlay with fuller description */}
+        <div className="absolute inset-0 bg-base/90 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center p-5">
+          <p className="text-sm text-fg leading-relaxed font-mono">
+            {description}
+          </p>
+        </div>
       </div>
 
       {/* Content */}
@@ -70,6 +71,6 @@ export function ProjectCard({ title, tags, size, year, summary, href, image }: P
           ))}
         </div>
       </div>
-    </Wrapper>
+    </div>
   )
 }

@@ -45,14 +45,14 @@ export const MOODS: Record<Mood, MoodConfig> = {
 }
 
 export interface ProjectCard {
-  id:      string
-  title:   string
-  tags:    string[]
-  size:    'small' | 'medium' | 'large'
-  year:    string
-  summary: string
-  href?:   string
-  image?:  string
+  id:          string
+  title:       string
+  tags:        string[]
+  size:        'small' | 'medium' | 'large'
+  year:        string
+  summary:     string
+  description: string
+  image?:      string
 }
 
 export const PROJECT_CARDS: ProjectCard[] = [
@@ -63,7 +63,7 @@ export const PROJECT_CARDS: ProjectCard[] = [
     size:    'large',
     year:    '2025',
     summary: 'Turned a 3-hour manual payroll process into a 10-minute run. Raw shift records go in — wage calculations, PDF reports, and labor-cost dashboards come out. Built to replace the spreadsheet entirely.',
-    href:    'https://spayroll.netlify.app',
+    description: 'A payroll engine built to replace a spreadsheet-and-calculator workflow entirely. Ingests raw shift records, applies wage rules and overtime logic, and outputs PDF pay reports alongside live labor-cost dashboards. What used to take three hours of manual reconciliation now runs in about ten minutes, end to end. Currently being hardened before a public release.',
     image:   '/spaydark.png',
   },
   {
@@ -73,7 +73,7 @@ export const PROJECT_CARDS: ProjectCard[] = [
     size:    'medium',
     year:    '2025',
     summary: 'Full-stack booking app for service businesses. Stripe payments, Google Sheets financial tracking, and webhook-driven invoice generation — cut manual back-office work by 95%.',
-    href:    'https://impearl.netlify.app',
+    description: 'A booking platform for service businesses, built to strip out back-office busywork. Handles Stripe payments, syncs financial records to Google Sheets automatically, and fires webhook-driven invoices the moment a job is booked. Manual admin work dropped by roughly 95% for the businesses using it. Still in active development ahead of a wider launch.',
     image:   '/impearl-screenshot.png',
   },
   {
@@ -83,7 +83,7 @@ export const PROJECT_CARDS: ProjectCard[] = [
     size:    'medium',
     year:    '2025',
     summary: 'Designed and deployed the entire tech stack for my own detailing business — booking platform, auth, payments, automated scheduling, and a customer analytics system tracking acquisition costs and conversion rates. Booking time down 60%. ROI up 40%.',
-    href:    'https://northpoledetailing.netlify.app',
+    description: 'The full tech stack behind my own detailing business, designed and shipped solo — booking platform, authentication, payments, and automated scheduling, plus a customer analytics layer tracking acquisition cost and conversion rate. Booking time dropped 60%, ROI climbed 40%. Actively used in production for the business, with more features on the way.',
     image:   '/npd-logo.png',
   },
   {
@@ -93,6 +93,7 @@ export const PROJECT_CARDS: ProjectCard[] = [
     size:    'small',
     year:    '2025',
     summary: 'Automated operations for a multi-site parking operator: 500+ weekly transactions processed, payroll time cut by 90%, and ETL pipelines feeding live Matplotlib dashboards.',
+    description: 'An operations suite built for a multi-site parking operator, automating what used to be manual transaction reconciliation and payroll. Processes 500+ transactions a week, cut payroll processing time by 90%, and runs ETL pipelines that feed live Matplotlib dashboards for site-level reporting. Currently being extended with more automated reporting.',
     image:   '/statistics.png',
   },
 ]
