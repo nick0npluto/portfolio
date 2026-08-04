@@ -20,7 +20,7 @@ export const MOODS: Record<Mood, MoodConfig> = {
     sub:       'Full-stack developer who ships fast, communicates clearly, and can work across any part of the product.',
     ctaLabel:  'Get in touch',
     emphasis:  'skills',
-    bio:       'CS grad from Georgia State (3.5 GPA, Dec 2025) with real production experience: built AWS data pipelines at Carter\'s, automated payroll systems saving 80% processing time, and shipped a full-stack booking platform from scratch. I also have a background in tech sales — I communicate clearly, I work well with non-technical stakeholders, and people genuinely enjoy working with me. I write clean code, move fast, and care about the outcome.',
+    bio:       'CS grad from Georgia State (3.5 GPA, Dec 2025) with real production experience: built AWS data pipelines at Carter\'s, automated payroll systems saving 80% processing time, and shipped a full-stack booking platform from scratch. AI is core to how I build now — I use it consistently and effectively to move faster without cutting corners, and every AI-forward project I ship still gets held to the same bar for quality. I also have a background in tech sales — I communicate clearly, I work well with non-technical stakeholders, and people genuinely enjoy working with me. I write clean code, move fast, and care about the outcome.',
   },
   collaborate: {
     label:     'Collaborate',
@@ -30,7 +30,7 @@ export const MOODS: Record<Mood, MoodConfig> = {
     sub:       'From rough requirements to a working product — I speak both technical and human fluently.',
     ctaLabel:  'Share your idea',
     emphasis:  'process',
-    bio:       'I\'m most useful when there\'s a real problem to solve. Give me ambiguous requirements and I\'ll figure it out — then explain it back to you in plain English. I have a background in SDR and tech sales, so I know how to listen, ask the right questions, and keep a project moving without losing anyone. Founders and small teams tend to click with me fast.',
+    bio:       'I\'m most useful when there\'s a real problem to solve. Give me ambiguous requirements and I\'ll figure it out — then explain it back to you in plain English. I lean on AI heavily and consistently to build faster, and I\'m effective with it because I know exactly where to trust it and where to double-check it. I have a background in SDR and tech sales, so I know how to listen, ask the right questions, and keep a project moving without losing anyone. Founders and small teams tend to click with me fast.',
   },
   curious: {
     label:     'Just Curious',
@@ -40,7 +40,7 @@ export const MOODS: Record<Mood, MoodConfig> = {
     sub:       'CS grad. Founder. Engineer. The kind of person you actually want to talk to.',
     ctaLabel:  'Say hello',
     emphasis:  'story',
-    bio:       'I graduated from Georgia State in December 2025, but I didn\'t wait to start shipping. I\'ve built pipelines, launched businesses, and closed deals — and somehow people always say I\'m easy to talk to. I have a background in SDR and tech sales that makes me a little different from the average engineer. Poke around and reach out if anything catches your eye.',
+    bio:       'I graduated from Georgia State in December 2025, but I didn\'t wait to start shipping. I\'ve built pipelines, launched businesses, and closed deals — and somehow people always say I\'m easy to talk to. AI is part of my everyday toolkit at this point, and I\'ve gotten consistent and effective with it, not just fast. I have a background in SDR and tech sales that makes me a little different from the average engineer. Poke around and reach out if anything catches your eye.',
   },
 }
 
