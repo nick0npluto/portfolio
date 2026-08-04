@@ -44,8 +44,8 @@ export function ProjectCard({ title, tags, size, year, summary, description, ima
         </span>
 
         {/* Hover overlay with fuller description */}
-        <div className="absolute inset-0 bg-base/90 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center p-5">
-          <p className="text-sm text-fg leading-relaxed font-mono">
+        <div className="absolute inset-0 bg-base/90 opacity-0 group-hover:opacity-100 transition-opacity duration-200 overflow-y-auto p-4">
+          <p className="text-xs text-fg leading-relaxed font-mono">
             {description}
           </p>
         </div>

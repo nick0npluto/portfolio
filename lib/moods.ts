@@ -86,16 +86,6 @@ export const PROJECT_CARDS: ProjectCard[] = [
     description: 'The full tech stack behind my own detailing business, designed and shipped solo — booking platform, authentication, payments, and automated scheduling, plus a customer analytics layer tracking acquisition cost and conversion rate. Booking time dropped 60%, ROI climbed 40%. Actively used in production for the business, with more features on the way.',
     image:   '/npd-logo.png',
   },
-  {
-    id:      'nps-automation',
-    title:   'NPS Operations Suite',
-    tags:    ['Python', 'Pandas', 'ETL', 'Automation', 'Matplotlib'],
-    size:    'small',
-    year:    '2025',
-    summary: 'Automated operations for a multi-site parking operator: 500+ weekly transactions processed, payroll time cut by 90%, and ETL pipelines feeding live Matplotlib dashboards.',
-    description: 'An operations suite built for a multi-site parking operator, automating what used to be manual transaction reconciliation and payroll. Processes 500+ transactions a week, cut payroll processing time by 90%, and runs ETL pipelines that feed live Matplotlib dashboards for site-level reporting. Currently being extended with more automated reporting.',
-    image:   '/statistics.png',
-  },
 ]
 
 export const SKILLS = [
