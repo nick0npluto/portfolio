@@ -35,16 +35,14 @@ function HireContact() {
         </a>
         <a
           href="mailto:nicholasonafuye@gmail.com"
-          className="group inline-flex items-center gap-3 px-8 py-4 border font-mono text-sm tracking-widest uppercase transition-colors duration-200 hover:border-[var(--accent)] hover:text-[var(--accent)]"
-          style={{ borderColor: '#1e1e1e', color: '#555' }}
+          className="group inline-flex items-center gap-3 px-8 py-4 border border-border text-muted font-mono text-sm tracking-widest uppercase transition-colors duration-200 hover:border-[var(--accent)] hover:text-[var(--accent)]"
         >
           nicholasonafuye@gmail.com
         </a>
         <a
           href="/nicholas-onafuye-resume.pdf"
           download
-          className="group inline-flex items-center gap-3 px-8 py-4 border font-mono text-sm tracking-widest uppercase transition-colors duration-200 hover:border-[var(--accent)] hover:text-[var(--accent)]"
-          style={{ borderColor: '#1e1e1e', color: '#555' }}
+          className="group inline-flex items-center gap-3 px-8 py-4 border border-border text-muted font-mono text-sm tracking-widest uppercase transition-colors duration-200 hover:border-[var(--accent)] hover:text-[var(--accent)]"
         >
           Resume ↓
         </a>
