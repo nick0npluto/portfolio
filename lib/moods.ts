@@ -20,7 +20,7 @@ export const MOODS: Record<Mood, MoodConfig> = {
     sub:       'Full-stack developer who ships fast, communicates clearly, and can work across any part of the product.',
     ctaLabel:  'Get in touch',
     emphasis:  'skills',
-    bio:       'CS grad from Georgia State (3.5 GPA, Dec 2025) with real production experience: built AWS data pipelines at Carter\'s, automated payroll systems saving 90% processing time, and shipped a full-stack booking platform from scratch. I also have a background in tech sales — I communicate clearly, I work well with non-technical stakeholders, and people genuinely enjoy working with me. I write clean code, move fast, and care about the outcome.',
+    bio:       'CS grad from Georgia State (3.5 GPA, Dec 2025) with real production experience: built AWS data pipelines at Carter\'s, automated payroll systems saving 80% processing time, and shipped a full-stack booking platform from scratch. I also have a background in tech sales — I communicate clearly, I work well with non-technical stakeholders, and people genuinely enjoy working with me. I write clean code, move fast, and care about the outcome.',
   },
   collaborate: {
     label:     'Collaborate',
@@ -53,6 +53,7 @@ export interface ProjectCard {
   summary:     string
   description: string
   image?:      string
+  aiForward?:  boolean
 }
 
 export const PROJECT_CARDS: ProjectCard[] = [
@@ -65,6 +66,7 @@ export const PROJECT_CARDS: ProjectCard[] = [
     summary: 'Turned a 3-hour manual payroll process into a 10-minute run. Raw shift records go in — wage calculations, PDF reports, and labor-cost dashboards come out. Built to replace the spreadsheet entirely.',
     description: 'A payroll engine built to replace a spreadsheet-and-calculator workflow entirely. Ingests raw shift records, applies wage rules and overtime logic, and outputs PDF pay reports alongside live labor-cost dashboards. What used to take three hours of manual reconciliation now runs in about ten minutes, end to end. Currently being hardened before a public release.',
     image:   '/spaydark.png',
+    aiForward: true,
   },
   {
     id:      'impearl',
@@ -75,6 +77,7 @@ export const PROJECT_CARDS: ProjectCard[] = [
     summary: 'Full-stack booking app for service businesses. Stripe payments, Google Sheets financial tracking, and webhook-driven invoice generation — cut manual back-office work by 95%.',
     description: 'A booking platform for service businesses, built to strip out back-office busywork. Handles Stripe payments, syncs financial records to Google Sheets automatically, and fires webhook-driven invoices the moment a job is booked. Manual admin work dropped by roughly 95% for the businesses using it. Still in active development ahead of a wider launch.',
     image:   '/impearl-screenshot.png',
+    aiForward: true,
   },
   {
     id:      'north-pole',

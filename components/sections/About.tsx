@@ -31,7 +31,7 @@ export function About() {
             {[
               { label: 'Based in',  value: 'United States' },
               { label: 'Available', value: 'Open to opportunities' },
-              { label: 'Focus',     value: 'Data · Software · Architecture' },
+              { label: 'Focus',     value: 'Data · Software · AI · Architecture' },
             ].map(({ label, value }) => (
               <div key={label} className="flex flex-col gap-1 border-l-2 pl-4" style={{ borderColor: 'var(--accent)' }}>
                 <span className="font-mono text-[10px] tracking-widest text-muted uppercase">{label}</span>

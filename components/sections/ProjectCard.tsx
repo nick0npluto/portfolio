@@ -14,7 +14,7 @@ interface ProjectCardProps extends ProjectCardType {
   index: number
 }
 
-export function ProjectCard({ title, tags, size, year, summary, description, image }: ProjectCardProps) {
+export function ProjectCard({ title, tags, size, year, summary, description, image, aiForward }: ProjectCardProps) {
   return (
     <div
       className="group break-inside-avoid mb-4 bg-surface border border-border rounded-lg overflow-hidden hover:border-[var(--accent)] transition-colors duration-200 block"
@@ -42,6 +42,14 @@ export function ProjectCard({ title, tags, size, year, summary, description, ima
         <span className="absolute top-3 right-3 font-mono text-[9px] tracking-widest text-muted uppercase bg-base/70 px-1.5 py-0.5 rounded">
           {year}
         </span>
+        {aiForward && (
+          <span
+            className="absolute top-3 left-3 font-mono text-[9px] tracking-widest uppercase px-1.5 py-0.5 rounded border"
+            style={{ borderColor: 'var(--accent)', color: 'var(--accent)', backgroundColor: 'var(--base)' }}
+          >
+            AI-Forward
+          </span>
+        )}
 
         {/* Hover overlay with fuller description */}
         <div className="absolute inset-0 bg-base/90 opacity-0 group-hover:opacity-100 transition-opacity duration-200 overflow-y-auto p-4">
