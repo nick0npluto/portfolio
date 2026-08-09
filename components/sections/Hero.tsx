@@ -27,7 +27,7 @@ export function Hero() {
           {/* Mobile headshot */}
           <div className="block lg:hidden relative w-28 aspect-[3/4] border border-border overflow-hidden anim-fade-up self-start">
             <Image
-              src="/headshot.png"
+              src="/headshotA.png"
               alt="Nicholas Onafuye"
               fill
               style={{ objectFit: 'cover', objectPosition: 'center top' }}
@@ -86,7 +86,7 @@ export function Hero() {
         {/* Right: headshot */}
         <div className="hidden lg:block relative w-72 xl:w-80 aspect-[3/4] border border-border overflow-hidden flex-shrink-0 anim-fade-up" style={{ animationDelay: '0.1s' }}>
           <Image
-            src="/headshot.png"
+            src="/headshotA.png"
             alt="Nicholas Onafuye"
             fill
             style={{ objectFit: 'cover', objectPosition: 'center top' }}
